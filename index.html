@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu/Navbar</title>
+    <style>
+        body{
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0px;
+        }
+        #header{           
+            text-align: center;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+            text-align: center;
+        }
+        #menu-bar{
+            background: #cd853f;
+            text-align: center;            
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            font-size: 18px;
+            color: white;
+        }
+        #container{
+            text-align: center;
+            padding: 20px ;            
+        }
+        p{
+            text-align: justify;
+        }
+        img{            
+            width: 45%;
+            height: 45%;    
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+       <img id="logo" src="https://t3.ftcdn.net/jpg/07/61/62/34/240_F_761623475_e90BEn21ZFNOSPIbx62f5p1s9dTcwnS4.jpg" alt="logo">  
+    </div>
+   
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>Projects</li>
+        <li>Team</li>
+        <li>Reviews</li>
+        <li>About us</li>
+    </nav>
+
+    <div id="container">
+        <h1>About Me</h1>
+
+        <img src="https://img.freepik.com/free-vector/organic-flat-about-me-concept-illustrated_23-2148909309.jpg?t=st=1716484570~exp=1716488170~hmac=c01d6550af9111889e5b1fab7e5ad818d9dd9de63223f90c3f35bb966522abac&w=740" alt="Image-of-Auther"/>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam voluptatem aspernatur voluptate libero molestiae, eius modi sapiente possimus laudantium asperiores ipsa cumque repellendus repudiandae sit a ab minus eos vero alias labore distinctio dicta temporibus rem! Suscipit ea sapiente rerum, neque eius illo animi voluptate dolore ex rem tempore voluptas necessitatibus voluptates esse id sunt, doloremque at. Sequi aperiam blanditiis doloribus cupiditate sit autem velit molestias vel, commodi qui, nobis nisi corrupti? Voluptate amet optio a sapiente velit aut nobis cum possimus enim ducimus quibusdam minus, vel repudiandae aperiam iure facere eaque voluptatibus quos fuga doloremque earum. Delectus minima ratione exercitationem quam doloribus iusto deleniti eum officia quae ullam vero, nisi ipsam nihil facere voluptates beatae totam id quaerat! Deserunt provident suscipit reiciendis sed nisi qui culpa quia soluta ut praesentium obcaecati quasi non quis ad tempore ab aliquam explicabo illo atque, est quisquam! Nihil deserunt qui, ad culpa perferendis laudantium? Consequatur voluptatem molestiae esse beatae laboriosam rem veniam est obcaecati quis iure voluptates, inventore repellat aperiam sapiente dolore. Nemo nisi molestias ipsa temporibus, ducimus sunt, harum sapiente iure laudantium saepe neque, sequi aut architecto. Nesciunt fugiat in sequi officiis velit. At laborum libero suscipit officia officiis vel magnam placeat accusantium! Iste quae deserunt consequatur adipisci fugiat quaerat quasi dolorum ad commodi earum molestias veritatis iure sequi, officiis accusantium veniam cupiditate soluta magni assumenda aspernatur. Ullam modi aspernatur nulla deserunt consectetur, animi suscipit voluptates, delectus assumenda repellendus saepe temporibus. Harum accusamus alias culpa quidem ipsa quis explicabo, quibusdam voluptas reiciendis dolore est eos ipsam nisi recusandae repellendus magnam ipsum, quam quod, aliquid reprehenderit debitis illo obcaecati iure. Exercitationem fugit ad, consequuntur sit harum in illum hic ea! Quibusdam enim voluptatibus, nobis alias reprehenderit impedit excepturi ab amet quisquam accusamus aliquid sequi, eius quia rerum qui, iure voluptatum temporibus culpa commodi.</p>
+
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            if(window.pageYOffset >= 170.66){
+                document.getElementById("menu-bar").classList.add("sticky");
+            }
+            else{
+                document.getElementById("menu-bar").classList.remove("sticky");
+            }
+        })
+    </script>
+</body>
+</html>
